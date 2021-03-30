@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Customs bag</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seHint">ابحث بالاسم او رقم البند</string>
+    <string name="search">بحث</string>
+    <string name="loading">جارى البحث</string>
+    <string name="chat">دردشه</string>
+    <string name="onlain_search">بحث اون لاين</string>
+    <string name="msgs">رسالتك</string>
+    <string name="Bunner_ID_recycler">ca-app-pub-5608130680601924/5479900739</string>
+    <string name="enterChat">ادخل بياناتك لبداء الدردشه</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="name">الاسم</string>
+    <string name="startCaht">ابدأء الدردشه</string>
+    <string name="post">المنشورات</string>
+    <string name="error_with_posting">حدث خطأ اثنا اضافه المنشور</string>
+</resources>

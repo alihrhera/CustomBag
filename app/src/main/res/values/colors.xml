@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004d40</color>
+    <color name="colorPrimaryDark">#00251a</color>
+    <color name="colorAccent">#FFD600</color>
+    <color name="color_special_light">#012403</color>
+    <color name="ActiveiconActivetext">#FBC02D</color>
+    <color name="whit">#fff</color>
+    <color name="textBack">#D2ACACAC</color>
+    <color name="open_gray">#F5F4F4</color>
+    <color name="black">#000000</color>
+</resources>

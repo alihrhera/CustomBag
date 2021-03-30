@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/postImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/postDate"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/textBack"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingStart="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/postTitle"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/textBack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@id/postDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        
+    </androidx.cardview.widget.CardView>
+
+   
+        
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

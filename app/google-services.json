@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "724868502748",
+    "firebase_url": "https://testproject-a82d0.firebaseio.com",
+    "project_id": "testproject-a82d0",
+    "storage_bucket": "testproject-a82d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724868502748:android:ca7e2791a1d796659b9019",
+        "android_client_info": {
+          "package_name": "com.booking.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724868502748-s4h76h04o955t01b7k5fjka3um4df8a4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.booking.user",
+            "certificate_hash": "eabf1f26e3a8901ee2d7a3c4e2709bcf8a090501"
+          }
+        },
+        {
+          "client_id": "724868502748-dhndmjrka3el9ks0ul7po5op2fihboe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcLXPkxOGEhHP0XlN8NxbSNA3PS8oQ8Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724868502748-dhndmjrka3el9ks0ul7po5op2fihboe9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724868502748:android:b432134d951a92d99b9019",
+        "android_client_info": {
+          "package_name": "com.customs.bag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724868502748-dhndmjrka3el9ks0ul7po5op2fihboe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcLXPkxOGEhHP0XlN8NxbSNA3PS8oQ8Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724868502748-dhndmjrka3el9ks0ul7po5op2fihboe9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724868502748:android:b8c335e2db305ec99b9019",
+        "android_client_info": {
+          "package_name": "com.hrhera.bookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724868502748-kqkqvec9a5o21u9ccgcj8lrsblot8ckc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hrhera.bookingapp",
+            "certificate_hash": "eabf1f26e3a8901ee2d7a3c4e2709bcf8a090501"
+          }
+        },
+        {
+          "client_id": "724868502748-dhndmjrka3el9ks0ul7po5op2fihboe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcLXPkxOGEhHP0XlN8NxbSNA3PS8oQ8Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724868502748-dhndmjrka3el9ks0ul7po5op2fihboe9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

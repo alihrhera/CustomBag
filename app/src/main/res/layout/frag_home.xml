@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/open_gray"
+    tools:context=".ui.HomeFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" >
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toStartOf="@id/tarifaa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_chat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/chat"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tarifaa"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chat"
+        app:layout_constraintTop_toBottomOf="@id/guideline2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_search_tarifa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/onlain_search"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/post"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/chat"
+        app:layout_constraintStart_toStartOf="@id/chat"
+        app:layout_constraintTop_toBottomOf="@id/chat">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_post" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/post"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
