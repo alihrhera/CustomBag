@@ -71,7 +71,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         ChatMessages messages = dataList.get(position);
-        holder.msg.setText(messages.getMessages());
+        holder.msg.setText(messages.getMessageText());
         Date date = new Date(messages.getTime());
         Calendar c = Calendar.getInstance();
         c.setTime(date);

@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.customs.bag.R;
+import com.customs.bag.data.online.ApiCall;
 import com.customs.bag.ui.chat.ChatViewModel;
 import com.customs.bag.ui.postes.PostsViewModel;
 import com.customs.bag.ui.tarif.SearchViewModel;
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         frManager.beginTransaction().replace(R.id.fragContainer, new SplashFragment()).commit();
         MobileAds.initialize(this, initializationStatus -> {
         });
+
+
+        ApiCall.getInstance().sendFcm();
 
 
     }

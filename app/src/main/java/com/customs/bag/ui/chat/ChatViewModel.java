@@ -8,6 +8,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.customs.bag.data.model.ChatMessages;
+import com.customs.bag.data.online.ApiCall;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -53,7 +54,9 @@ public class ChatViewModel extends AndroidViewModel {
     }
 
     public void sendMessage(ChatMessages message) {
-        myRef.child(message.getId()).setValue(message);
+        myRef.child(message.getId()).setValue(message).addOnSuccessListener(aVoid -> {
+            ApiCall.getInstance().notifyUsers(message.getMessageText());
+        });
 
     }
 

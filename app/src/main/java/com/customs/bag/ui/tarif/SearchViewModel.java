@@ -11,6 +11,7 @@ import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.StringRequestListener;
+import com.customs.bag.data.online.ApiCall;
 import com.customs.bag.util.DataManger;
 
 public class SearchViewModel extends AndroidViewModel {
@@ -26,20 +27,7 @@ public class SearchViewModel extends AndroidViewModel {
 
 
     public void searchAboutSomething(String query) {
-        String url = DataManger.Url + "NewSerch.php?serch=" + query;
-        AndroidNetworking.get(url)
-                .setTag("search")
-                .setPriority(Priority.HIGH)
-                .build()
-                .getAsString(new StringRequestListener() {
-                    @Override
-                    public void onResponse(String response) {
-                        responseLiveData.postValue(response);
-                    }
-                    public void onError(ANError anError) {
-                        responseLiveData.postValue("Error");
-                    }
-                });
+        ApiCall.getInstance().getAllPost(query, responseLiveData::postValue);
     }
 
 

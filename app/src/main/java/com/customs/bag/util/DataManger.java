@@ -2,6 +2,7 @@ package com.customs.bag.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import com.customs.bag.data.model.Post;
 
@@ -61,6 +62,7 @@ public class DataManger {
     }
 
     public void setNameAndPhone(String name, String phone) {
+        if (shp == null) return;
         shp.edit().putString("name", name).apply();
         shp.edit().putString("phone", phone).apply();
         shp.edit().putBoolean("reg", true).apply();
@@ -79,6 +81,16 @@ public class DataManger {
 
     public void setChatOpen(boolean chatIsOpen) {
         this.chatIsOpen = chatIsOpen;
+    }
+
+
+    public String getFcmToken() {
+        return shp.getString("FCM", "non");
+    }
+
+    public void setFcmToken(String fcmToken) {
+        Log.e("fcm", fcmToken);
+        shp.edit().putString("FCM", fcmToken).apply();
     }
 }
 

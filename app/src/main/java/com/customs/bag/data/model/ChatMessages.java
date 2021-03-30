@@ -16,7 +16,7 @@ public class ChatMessages {
 
     String senderId="";
     String id;
-    String messages="";
+    String messageText="";
     String name="";
     long time;
 
@@ -41,12 +41,12 @@ public class ChatMessages {
         this.id = id;
     }
 
-    public String getMessages() {
-        return messages;
+    public String getMessageText() {
+        return messageText;
     }
 
-    public void setMessages(String messages) {
-        this.messages = messages;
+    public void setMessageText(String messageText) {
+        this.messageText = messageText;
     }
 
     public long getTime() {

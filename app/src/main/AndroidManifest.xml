@@ -29,7 +29,12 @@
             android:theme="@style/Base.Theme.AppCompat" />
 
 
-
+        <service
+            android:name=".util.MFCM">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
 
     </application>
 

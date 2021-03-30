@@ -62,7 +62,7 @@ public class ChatFragment extends Fragment {
                     long time = Calendar.getInstance().getTimeInMillis();
                     ChatMessages ms = new ChatMessages();
                     ms.setSenderId(myId);
-                    ms.setMessages(getMsg.getText().toString());
+                    ms.setMessageText(getMsg.getText().toString());
                     ms.setTime(time);
                     ms.setName(name);
                     ms.setId(time + "");
